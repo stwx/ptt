@@ -1,0 +1,1114 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA0AFA321B390B9B00363450 /* libPttS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0AFA311B390B9B00363450 /* libPttS.a */; };
+		DA1E49F01B438901001CB356 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1E49EF1B438901001CB356 /* DBManager.m */; };
+		DA1E49F41B438B51001CB356 /* MyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1E49F31B438B51001CB356 /* MyInfo.m */; };
+		DA1E49F71B438B51001CB356 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1E49F61B438B51001CB356 /* Group.m */; };
+		DA1E49FA1B438B52001CB356 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1E49F91B438B52001CB356 /* Member.m */; };
+		DA1E49FD1B438B52001CB356 /* FriendInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1E49FC1B438B52001CB356 /* FriendInfo.m */; };
+		DA1E4A001B438B52001CB356 /* Letter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1E49FF1B438B52001CB356 /* Letter.m */; };
+		DA1E4A031B438B52001CB356 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1E4A021B438B52001CB356 /* Message.m */; };
+		DA1E4A061B438B52001CB356 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1E4A051B438B52001CB356 /* UserInfo.m */; };
+		DA1E4A091B438C00001CB356 /* Conversation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1E4A081B438C00001CB356 /* Conversation.m */; };
+		DA3C05901B38340F009B2D79 /* ConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3C058F1B38340F009B2D79 /* ConversationCell.m */; };
+		DA5593941B2D609600B37D16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593931B2D609600B37D16 /* main.m */; };
+		DA55939A1B2D609600B37D16 /* PTT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA5593981B2D609600B37D16 /* PTT.xcdatamodeld */; };
+		DA5593A21B2D609600B37D16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA5593A11B2D609600B37D16 /* Images.xcassets */; };
+		DA5593A51B2D609600B37D16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA5593A31B2D609600B37D16 /* LaunchScreen.xib */; };
+		DA5593B11B2D609600B37D16 /* PTTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593B01B2D609600B37D16 /* PTTTests.m */; };
+		DA5593D31B2D64A800B37D16 /* UDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593D21B2D64A800B37D16 /* UDManager.m */; };
+		DA5593E11B2D653700B37D16 /* AnimationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593D61B2D653700B37D16 /* AnimationUtil.m */; };
+		DA5593E21B2D653700B37D16 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593D81B2D653700B37D16 /* NSString+Extension.m */; };
+		DA5593E31B2D653700B37D16 /* pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593DA1B2D653700B37D16 /* pinyin.m */; };
+		DA5593E41B2D653700B37D16 /* UIImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593DC1B2D653700B37D16 /* UIImage+ResizeImage.m */; };
+		DA5593E51B2D653700B37D16 /* UINavigationController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593DE1B2D653700B37D16 /* UINavigationController+Animation.m */; };
+		DA5593E61B2D653700B37D16 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593E01B2D653700B37D16 /* UITableView+Extension.m */; };
+		DA5594021B2D655000B37D16 /* HttpAckHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593F91B2D655000B37D16 /* HttpAckHandler.m */; };
+		DA5594031B2D655000B37D16 /* HttpInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593FB1B2D655000B37D16 /* HttpInfo.m */; };
+		DA5594041B2D655000B37D16 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593FD1B2D655000B37D16 /* HttpManager.m */; };
+		DA5594051B2D655000B37D16 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5593FF1B2D655000B37D16 /* HttpRequest.m */; };
+		DA5594061B2D655000B37D16 /* HttpUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594011B2D655000B37D16 /* HttpUrl.m */; };
+		DA5594171B2D667600B37D16 /* PttNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594121B2D667600B37D16 /* PttNavigationController.m */; };
+		DA5594181B2D667600B37D16 /* PttTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594141B2D667600B37D16 /* PttTabBarController.m */; };
+		DA5594191B2D667600B37D16 /* PttViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594161B2D667600B37D16 /* PttViewController.m */; };
+		DA55941D1B2D677C00B37D16 /* InfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55941C1B2D677C00B37D16 /* InfoCell.m */; };
+		DA5594211B2D688600B37D16 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55941F1B2D688600B37D16 /* LoginViewController.m */; };
+		DA5594221B2D688600B37D16 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA5594201B2D688600B37D16 /* LoginViewController.xib */; };
+		DA5594341B2D689E00B37D16 /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594251B2D689E00B37D16 /* AudioManager.m */; };
+		DA5594361B2D689E00B37D16 /* PttService.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594291B2D689E00B37D16 /* PttService.m */; };
+		DA5594371B2D689E00B37D16 /* PttSNotiHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55942B1B2D689E00B37D16 /* PttSNotiHandler.m */; };
+		DA5594381B2D689E00B37D16 /* PttTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55942D1B2D689E00B37D16 /* PttTimer.m */; };
+		DA55943B1B2D689E00B37D16 /* UdpPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594331B2D689E00B37D16 /* UdpPacket.m */; };
+		DA5594401B2D690100B37D16 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55943E1B2D690100B37D16 /* RegisterViewController.m */; };
+		DA5594411B2D690100B37D16 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA55943F1B2D690100B37D16 /* RegisterViewController.xib */; };
+		DA5594441B2D69C000B37D16 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594431B2D69C000B37D16 /* LoadingView.m */; };
+		DA5594481B2D6A2A00B37D16 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594461B2D6A2A00B37D16 /* HomePageViewController.m */; };
+		DA55944D1B2D6A4D00B37D16 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55944B1B2D6A4D00B37D16 /* FriendsViewController.m */; };
+		DA55944E1B2D6A4D00B37D16 /* FriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA55944C1B2D6A4D00B37D16 /* FriendsViewController.xib */; };
+		DA5594521B2D6A5C00B37D16 /* GroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594501B2D6A5C00B37D16 /* GroupsViewController.m */; };
+		DA5594531B2D6A5C00B37D16 /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA5594511B2D6A5C00B37D16 /* GroupsViewController.xib */; };
+		DA5594571B2D6A6500B37D16 /* MembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594551B2D6A6500B37D16 /* MembersViewController.m */; };
+		DA5594581B2D6A6500B37D16 /* MembersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA5594561B2D6A6500B37D16 /* MembersViewController.xib */; };
+		DA5594661B2D6C5200B37D16 /* ChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55945B1B2D6C5200B37D16 /* ChangePwdViewController.m */; };
+		DA5594671B2D6C5200B37D16 /* ChangePwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA55945C1B2D6C5200B37D16 /* ChangePwdViewController.xib */; };
+		DA5594681B2D6C5200B37D16 /* RenameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55945E1B2D6C5200B37D16 /* RenameViewController.m */; };
+		DA5594691B2D6C5200B37D16 /* RenameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA55945F1B2D6C5200B37D16 /* RenameViewController.xib */; };
+		DA55946A1B2D6C5200B37D16 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594611B2D6C5200B37D16 /* SettingViewController.m */; };
+		DA55946B1B2D6C5200B37D16 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA5594621B2D6C5200B37D16 /* SettingViewController.xib */; };
+		DA55946C1B2D6C5200B37D16 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594641B2D6C5200B37D16 /* UserInfoViewController.m */; };
+		DA55946D1B2D6C5200B37D16 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA5594651B2D6C5200B37D16 /* UserInfoViewController.xib */; };
+		DA5594701B2D6CAA00B37D16 /* PttTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55946F1B2D6CAA00B37D16 /* PttTopBar.m */; };
+		DA5594781B2D75E100B37D16 /* MemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594751B2D75E100B37D16 /* MemberCell.m */; };
+		DA5594791B2D75E100B37D16 /* MemberFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594771B2D75E100B37D16 /* MemberFootView.m */; };
+		DA57E1131B398F0D00BA9F97 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA57E10C1B398F0D00BA9F97 /* ChatCell.m */; };
+		DA57E1141B398F0D00BA9F97 /* ChatCellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA57E10E1B398F0D00BA9F97 /* ChatCellFrameModel.m */; };
+		DA57E1151B398F0D00BA9F97 /* ChatTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA57E1101B398F0D00BA9F97 /* ChatTextView.m */; };
+		DA57E1161B398F0D00BA9F97 /* PttRecordHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DA57E1121B398F0D00BA9F97 /* PttRecordHUD.m */; };
+		DA57E11C1B399E5E00BA9F97 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA57E11B1B399E5E00BA9F97 /* MessageModel.m */; };
+		DA5D890E1B3B08DD00244EDF /* InviteInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5D890D1B3B08DD00244EDF /* InviteInfoViewController.m */; };
+		DA6CAA5A1B3BF8FF0092C034 /* RecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CAA591B3BF8FF0092C034 /* RecordManager.m */; };
+		DA6CAA5D1B3BF9140092C034 /* UpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CAA5C1B3BF9140092C034 /* UpdateManager.m */; };
+		DA7FF7D61B33EBC300AF8234 /* EstimateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FF7D51B33EBC300AF8234 /* EstimateUtil.m */; };
+		DA7FF8031B37DCBF00AF8234 /* ContactUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FF8021B37DCBF00AF8234 /* ContactUtil.m */; };
+		DA7FF80E1B37E63A00AF8234 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FF8061B37E63A00AF8234 /* AddContactViewController.m */; };
+		DA7FF80F1B37E63A00AF8234 /* NewContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FF8081B37E63A00AF8234 /* NewContactViewController.m */; };
+		DA7FF8101B37E63A00AF8234 /* NewContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7FF8091B37E63A00AF8234 /* NewContactViewController.xib */; };
+		DA7FF8111B37E63A00AF8234 /* PhoneContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FF80B1B37E63A00AF8234 /* PhoneContactCell.m */; };
+		DA7FF8121B37E63A00AF8234 /* PhoneContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FF80D1B37E63A00AF8234 /* PhoneContactViewController.m */; };
+		DA7FF81C1B37E6CF00AF8234 /* CreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FF8151B37E6CF00AF8234 /* CreateGroupViewController.m */; };
+		DA7FF81D1B37E6CF00AF8234 /* CreateGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7FF8161B37E6CF00AF8234 /* CreateGroupViewController.xib */; };
+		DA7FF81E1B37E6CF00AF8234 /* MemberSelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FF8181B37E6CF00AF8234 /* MemberSelCell.m */; };
+		DA7FF8231B37E7DF00AF8234 /* MemberSelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FF8221B37E7DF00AF8234 /* MemberSelViewController.m */; };
+		DA7FF8331B37FA8D00AF8234 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7FF8321B37FA8D00AF8234 /* NSDate+Extension.m */; };
+		DA85C1D81B392CEF006DCE39 /* NewInvitedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA85C1D61B392CEF006DCE39 /* NewInvitedViewController.m */; };
+		DA85C1D91B392CEF006DCE39 /* NewInvitedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA85C1D71B392CEF006DCE39 /* NewInvitedViewController.xib */; };
+		DA85C1DD1B394AB5006DCE39 /* FriendInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA85C1DB1B394AB5006DCE39 /* FriendInfoViewController.m */; };
+		DA85C1DE1B394AB5006DCE39 /* FriendInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA85C1DC1B394AB5006DCE39 /* FriendInfoViewController.xib */; };
+		DA85C1E21B39570E006DCE39 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA85C1E11B39570E006DCE39 /* ChatViewController.m */; };
+		DA85C1E51B3957DE006DCE39 /* PTTInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA85C1E41B3957DE006DCE39 /* PTTInputView.m */; };
+		DA86348C1B413BCB00B3EA26 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86348A1B413BCB00B3EA26 /* AppInfoViewController.m */; };
+		DA86348D1B413BCB00B3EA26 /* AppInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA86348B1B413BCB00B3EA26 /* AppInfoViewController.xib */; };
+		DA9B58E31B3CEA0A0035DC13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9B58E21B3CEA0A0035DC13 /* AppDelegate.m */; };
+		DA9B58E51B3CEA200035DC13 /* SocketConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9B58E41B3CEA200035DC13 /* SocketConnect.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA5593AB1B2D609600B37D16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5593861B2D609600B37D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA55938D1B2D609600B37D16;
+			remoteInfo = PTT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA0AFA311B390B9B00363450 /* libPttS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPttS.a; sourceTree = "<group>"; };
+		DA1E49EE1B438901001CB356 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		DA1E49EF1B438901001CB356 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		DA1E49F21B438B51001CB356 /* MyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfo.h; sourceTree = "<group>"; };
+		DA1E49F31B438B51001CB356 /* MyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfo.m; sourceTree = "<group>"; };
+		DA1E49F51B438B51001CB356 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		DA1E49F61B438B51001CB356 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		DA1E49F81B438B52001CB356 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		DA1E49F91B438B52001CB356 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		DA1E49FB1B438B52001CB356 /* FriendInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendInfo.h; sourceTree = "<group>"; };
+		DA1E49FC1B438B52001CB356 /* FriendInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendInfo.m; sourceTree = "<group>"; };
+		DA1E49FE1B438B52001CB356 /* Letter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letter.h; sourceTree = "<group>"; };
+		DA1E49FF1B438B52001CB356 /* Letter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Letter.m; sourceTree = "<group>"; };
+		DA1E4A011B438B52001CB356 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		DA1E4A021B438B52001CB356 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		DA1E4A041B438B52001CB356 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		DA1E4A051B438B52001CB356 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		DA1E4A071B438C00001CB356 /* Conversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversation.h; sourceTree = "<group>"; };
+		DA1E4A081B438C00001CB356 /* Conversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversation.m; sourceTree = "<group>"; };
+		DA3C058E1B38340F009B2D79 /* ConversationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationCell.h; sourceTree = "<group>"; };
+		DA3C058F1B38340F009B2D79 /* ConversationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationCell.m; sourceTree = "<group>"; };
+		DA55938E1B2D609600B37D16 /* PTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5593921B2D609600B37D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5593931B2D609600B37D16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA5593951B2D609600B37D16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA5593991B2D609600B37D16 /* PTT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PTT.xcdatamodel; sourceTree = "<group>"; };
+		DA5593A11B2D609600B37D16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA5593A41B2D609600B37D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DA5593AA1B2D609600B37D16 /* PTTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5593AF1B2D609600B37D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5593B01B2D609600B37D16 /* PTTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTTTests.m; sourceTree = "<group>"; };
+		DA5593BA1B2D611600B37D16 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DA5593BB1B2D616E00B37D16 /* PTT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTT.h; sourceTree = "<group>"; };
+		DA5593BC1B2D616E00B37D16 /* PttExtern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttExtern.h; sourceTree = "<group>"; };
+		DA5593D11B2D64A800B37D16 /* UDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDManager.h; sourceTree = "<group>"; };
+		DA5593D21B2D64A800B37D16 /* UDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDManager.m; sourceTree = "<group>"; };
+		DA5593D51B2D653700B37D16 /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
+		DA5593D61B2D653700B37D16 /* AnimationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationUtil.m; sourceTree = "<group>"; };
+		DA5593D71B2D653700B37D16 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		DA5593D81B2D653700B37D16 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		DA5593D91B2D653700B37D16 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		DA5593DA1B2D653700B37D16 /* pinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pinyin.m; sourceTree = "<group>"; };
+		DA5593DB1B2D653700B37D16 /* UIImage+ResizeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeImage.h"; sourceTree = "<group>"; };
+		DA5593DC1B2D653700B37D16 /* UIImage+ResizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeImage.m"; sourceTree = "<group>"; };
+		DA5593DD1B2D653700B37D16 /* UINavigationController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Animation.h"; sourceTree = "<group>"; };
+		DA5593DE1B2D653700B37D16 /* UINavigationController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Animation.m"; sourceTree = "<group>"; };
+		DA5593DF1B2D653700B37D16 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
+		DA5593E01B2D653700B37D16 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
+		DA5593F81B2D655000B37D16 /* HttpAckHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpAckHandler.h; sourceTree = "<group>"; };
+		DA5593F91B2D655000B37D16 /* HttpAckHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpAckHandler.m; sourceTree = "<group>"; };
+		DA5593FA1B2D655000B37D16 /* HttpInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpInfo.h; sourceTree = "<group>"; };
+		DA5593FB1B2D655000B37D16 /* HttpInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpInfo.m; sourceTree = "<group>"; };
+		DA5593FC1B2D655000B37D16 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		DA5593FD1B2D655000B37D16 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		DA5593FE1B2D655000B37D16 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		DA5593FF1B2D655000B37D16 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		DA5594001B2D655000B37D16 /* HttpUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpUrl.h; sourceTree = "<group>"; };
+		DA5594011B2D655000B37D16 /* HttpUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpUrl.m; sourceTree = "<group>"; };
+		DA5594111B2D667600B37D16 /* PttNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttNavigationController.h; sourceTree = "<group>"; };
+		DA5594121B2D667600B37D16 /* PttNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PttNavigationController.m; sourceTree = "<group>"; };
+		DA5594131B2D667600B37D16 /* PttTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttTabBarController.h; sourceTree = "<group>"; };
+		DA5594141B2D667600B37D16 /* PttTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PttTabBarController.m; sourceTree = "<group>"; };
+		DA5594151B2D667600B37D16 /* PttViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttViewController.h; sourceTree = "<group>"; };
+		DA5594161B2D667600B37D16 /* PttViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PttViewController.m; sourceTree = "<group>"; };
+		DA55941B1B2D677C00B37D16 /* InfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCell.h; sourceTree = "<group>"; };
+		DA55941C1B2D677C00B37D16 /* InfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCell.m; sourceTree = "<group>"; };
+		DA55941E1B2D688600B37D16 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DA55941F1B2D688600B37D16 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		DA5594201B2D688600B37D16 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DA5594241B2D689E00B37D16 /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		DA5594251B2D689E00B37D16 /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
+		DA5594271B2D689E00B37D16 /* PttS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttS.h; sourceTree = "<group>"; };
+		DA5594281B2D689E00B37D16 /* PttService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttService.h; sourceTree = "<group>"; };
+		DA5594291B2D689E00B37D16 /* PttService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PttService.m; sourceTree = "<group>"; };
+		DA55942A1B2D689E00B37D16 /* PttSNotiHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttSNotiHandler.h; sourceTree = "<group>"; };
+		DA55942B1B2D689E00B37D16 /* PttSNotiHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PttSNotiHandler.m; sourceTree = "<group>"; };
+		DA55942C1B2D689E00B37D16 /* PttTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttTimer.h; sourceTree = "<group>"; };
+		DA55942D1B2D689E00B37D16 /* PttTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PttTimer.m; sourceTree = "<group>"; };
+		DA55942E1B2D689E00B37D16 /* SocketConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketConnect.h; sourceTree = "<group>"; };
+		DA5594321B2D689E00B37D16 /* UdpPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpPacket.h; sourceTree = "<group>"; };
+		DA5594331B2D689E00B37D16 /* UdpPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UdpPacket.m; sourceTree = "<group>"; };
+		DA55943D1B2D690100B37D16 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		DA55943E1B2D690100B37D16 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		DA55943F1B2D690100B37D16 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		DA5594421B2D69C000B37D16 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		DA5594431B2D69C000B37D16 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		DA5594451B2D6A2A00B37D16 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		DA5594461B2D6A2A00B37D16 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		DA55944A1B2D6A4D00B37D16 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		DA55944B1B2D6A4D00B37D16 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		DA55944C1B2D6A4D00B37D16 /* FriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsViewController.xib; sourceTree = "<group>"; };
+		DA55944F1B2D6A5C00B37D16 /* GroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsViewController.h; sourceTree = "<group>"; };
+		DA5594501B2D6A5C00B37D16 /* GroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsViewController.m; sourceTree = "<group>"; };
+		DA5594511B2D6A5C00B37D16 /* GroupsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
+		DA5594541B2D6A6500B37D16 /* MembersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersViewController.h; sourceTree = "<group>"; };
+		DA5594551B2D6A6500B37D16 /* MembersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersViewController.m; sourceTree = "<group>"; };
+		DA5594561B2D6A6500B37D16 /* MembersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembersViewController.xib; sourceTree = "<group>"; };
+		DA55945A1B2D6C5200B37D16 /* ChangePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePwdViewController.h; sourceTree = "<group>"; };
+		DA55945B1B2D6C5200B37D16 /* ChangePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePwdViewController.m; sourceTree = "<group>"; };
+		DA55945C1B2D6C5200B37D16 /* ChangePwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePwdViewController.xib; sourceTree = "<group>"; };
+		DA55945D1B2D6C5200B37D16 /* RenameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenameViewController.h; sourceTree = "<group>"; };
+		DA55945E1B2D6C5200B37D16 /* RenameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenameViewController.m; sourceTree = "<group>"; };
+		DA55945F1B2D6C5200B37D16 /* RenameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenameViewController.xib; sourceTree = "<group>"; };
+		DA5594601B2D6C5200B37D16 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		DA5594611B2D6C5200B37D16 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		DA5594621B2D6C5200B37D16 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		DA5594631B2D6C5200B37D16 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		DA5594641B2D6C5200B37D16 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		DA5594651B2D6C5200B37D16 /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
+		DA55946E1B2D6CAA00B37D16 /* PttTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttTopBar.h; sourceTree = "<group>"; };
+		DA55946F1B2D6CAA00B37D16 /* PttTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PttTopBar.m; sourceTree = "<group>"; };
+		DA5594741B2D75E100B37D16 /* MemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberCell.h; sourceTree = "<group>"; };
+		DA5594751B2D75E100B37D16 /* MemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberCell.m; sourceTree = "<group>"; };
+		DA5594761B2D75E100B37D16 /* MemberFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberFootView.h; sourceTree = "<group>"; };
+		DA5594771B2D75E100B37D16 /* MemberFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberFootView.m; sourceTree = "<group>"; };
+		DA57E10B1B398F0D00BA9F97 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		DA57E10C1B398F0D00BA9F97 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		DA57E10D1B398F0D00BA9F97 /* ChatCellFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCellFrameModel.h; sourceTree = "<group>"; };
+		DA57E10E1B398F0D00BA9F97 /* ChatCellFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCellFrameModel.m; sourceTree = "<group>"; };
+		DA57E10F1B398F0D00BA9F97 /* ChatTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTextView.h; sourceTree = "<group>"; };
+		DA57E1101B398F0D00BA9F97 /* ChatTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTextView.m; sourceTree = "<group>"; };
+		DA57E1111B398F0D00BA9F97 /* PttRecordHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttRecordHUD.h; sourceTree = "<group>"; };
+		DA57E1121B398F0D00BA9F97 /* PttRecordHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PttRecordHUD.m; sourceTree = "<group>"; };
+		DA57E11A1B399E5E00BA9F97 /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		DA57E11B1B399E5E00BA9F97 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
+		DA5D890C1B3B08DD00244EDF /* InviteInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteInfoViewController.h; sourceTree = "<group>"; };
+		DA5D890D1B3B08DD00244EDF /* InviteInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteInfoViewController.m; sourceTree = "<group>"; };
+		DA6CAA581B3BF8FF0092C034 /* RecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordManager.h; sourceTree = "<group>"; };
+		DA6CAA591B3BF8FF0092C034 /* RecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordManager.m; sourceTree = "<group>"; };
+		DA6CAA5B1B3BF9140092C034 /* UpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateManager.h; sourceTree = "<group>"; };
+		DA6CAA5C1B3BF9140092C034 /* UpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateManager.m; sourceTree = "<group>"; };
+		DA7FF7D41B33EBC300AF8234 /* EstimateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstimateUtil.h; sourceTree = "<group>"; };
+		DA7FF7D51B33EBC300AF8234 /* EstimateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstimateUtil.m; sourceTree = "<group>"; };
+		DA7FF8011B37DCBF00AF8234 /* ContactUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUtil.h; sourceTree = "<group>"; };
+		DA7FF8021B37DCBF00AF8234 /* ContactUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUtil.m; sourceTree = "<group>"; };
+		DA7FF8051B37E63A00AF8234 /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		DA7FF8061B37E63A00AF8234 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
+		DA7FF8071B37E63A00AF8234 /* NewContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewContactViewController.h; sourceTree = "<group>"; };
+		DA7FF8081B37E63A00AF8234 /* NewContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewContactViewController.m; sourceTree = "<group>"; };
+		DA7FF8091B37E63A00AF8234 /* NewContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewContactViewController.xib; sourceTree = "<group>"; };
+		DA7FF80A1B37E63A00AF8234 /* PhoneContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneContactCell.h; sourceTree = "<group>"; };
+		DA7FF80B1B37E63A00AF8234 /* PhoneContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneContactCell.m; sourceTree = "<group>"; };
+		DA7FF80C1B37E63A00AF8234 /* PhoneContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneContactViewController.h; sourceTree = "<group>"; };
+		DA7FF80D1B37E63A00AF8234 /* PhoneContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneContactViewController.m; sourceTree = "<group>"; };
+		DA7FF8141B37E6CF00AF8234 /* CreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupViewController.h; sourceTree = "<group>"; };
+		DA7FF8151B37E6CF00AF8234 /* CreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupViewController.m; sourceTree = "<group>"; };
+		DA7FF8161B37E6CF00AF8234 /* CreateGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateGroupViewController.xib; sourceTree = "<group>"; };
+		DA7FF8171B37E6CF00AF8234 /* MemberSelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberSelCell.h; sourceTree = "<group>"; };
+		DA7FF8181B37E6CF00AF8234 /* MemberSelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberSelCell.m; sourceTree = "<group>"; };
+		DA7FF8211B37E7DF00AF8234 /* MemberSelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberSelViewController.h; sourceTree = "<group>"; };
+		DA7FF8221B37E7DF00AF8234 /* MemberSelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberSelViewController.m; sourceTree = "<group>"; };
+		DA7FF8311B37FA8D00AF8234 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		DA7FF8321B37FA8D00AF8234 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		DA85C1D51B392CEF006DCE39 /* NewInvitedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewInvitedViewController.h; sourceTree = "<group>"; };
+		DA85C1D61B392CEF006DCE39 /* NewInvitedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewInvitedViewController.m; sourceTree = "<group>"; };
+		DA85C1D71B392CEF006DCE39 /* NewInvitedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewInvitedViewController.xib; sourceTree = "<group>"; };
+		DA85C1DA1B394AB5006DCE39 /* FriendInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendInfoViewController.h; sourceTree = "<group>"; };
+		DA85C1DB1B394AB5006DCE39 /* FriendInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendInfoViewController.m; sourceTree = "<group>"; };
+		DA85C1DC1B394AB5006DCE39 /* FriendInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendInfoViewController.xib; sourceTree = "<group>"; };
+		DA85C1E01B39570E006DCE39 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		DA85C1E11B39570E006DCE39 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		DA85C1E31B3957DE006DCE39 /* PTTInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTInputView.h; sourceTree = "<group>"; };
+		DA85C1E41B3957DE006DCE39 /* PTTInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTInputView.m; sourceTree = "<group>"; };
+		DA8634891B413BCB00B3EA26 /* AppInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
+		DA86348A1B413BCB00B3EA26 /* AppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
+		DA86348B1B413BCB00B3EA26 /* AppInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppInfoViewController.xib; sourceTree = "<group>"; };
+		DA9B58E21B3CEA0A0035DC13 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA9B58E41B3CEA200035DC13 /* SocketConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketConnect.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA55938B1B2D609600B37D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0AFA321B390B9B00363450 /* libPttS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5593A71B2D609600B37D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA1E49F11B438B3F001CB356 /* DBModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA1E4A071B438C00001CB356 /* Conversation.h */,
+				DA1E4A081B438C00001CB356 /* Conversation.m */,
+				DA1E4A041B438B52001CB356 /* UserInfo.h */,
+				DA1E4A051B438B52001CB356 /* UserInfo.m */,
+				DA1E4A011B438B52001CB356 /* Message.h */,
+				DA1E4A021B438B52001CB356 /* Message.m */,
+				DA1E49FE1B438B52001CB356 /* Letter.h */,
+				DA1E49FF1B438B52001CB356 /* Letter.m */,
+				DA1E49FB1B438B52001CB356 /* FriendInfo.h */,
+				DA1E49FC1B438B52001CB356 /* FriendInfo.m */,
+				DA1E49F81B438B52001CB356 /* Member.h */,
+				DA1E49F91B438B52001CB356 /* Member.m */,
+				DA1E49F51B438B51001CB356 /* Group.h */,
+				DA1E49F61B438B51001CB356 /* Group.m */,
+				DA1E49F21B438B51001CB356 /* MyInfo.h */,
+				DA1E49F31B438B51001CB356 /* MyInfo.m */,
+			);
+			path = DBModel;
+			sourceTree = "<group>";
+		};
+		DA5593851B2D609600B37D16 = {
+			isa = PBXGroup;
+			children = (
+				DA5593901B2D609600B37D16 /* PTT */,
+				DA5593AD1B2D609600B37D16 /* PTTTests */,
+				DA55938F1B2D609600B37D16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA55938F1B2D609600B37D16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA55938E1B2D609600B37D16 /* PTT.app */,
+				DA5593AA1B2D609600B37D16 /* PTTTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA5593901B2D609600B37D16 /* PTT */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CAA571B3BF8FF0092C034 /* Manager */,
+				DA5594231B2D689E00B37D16 /* PttS */,
+				DA55941A1B2D673800B37D16 /* View */,
+				DA5594071B2D663E00B37D16 /* ViewController */,
+				DA5593F71B2D655000B37D16 /* Http */,
+				DA5593D41B2D653700B37D16 /* Util */,
+				DA5593BD1B2D621F00B37D16 /* DataBase */,
+				DA5593951B2D609600B37D16 /* AppDelegate.h */,
+				DA9B58E21B3CEA0A0035DC13 /* AppDelegate.m */,
+				DA5593A11B2D609600B37D16 /* Images.xcassets */,
+				DA5593A31B2D609600B37D16 /* LaunchScreen.xib */,
+				DA5593981B2D609600B37D16 /* PTT.xcdatamodeld */,
+				DA5593911B2D609600B37D16 /* Supporting Files */,
+			);
+			path = PTT;
+			sourceTree = "<group>";
+		};
+		DA5593911B2D609600B37D16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA5593BB1B2D616E00B37D16 /* PTT.h */,
+				DA5593BC1B2D616E00B37D16 /* PttExtern.h */,
+				DA5593BA1B2D611600B37D16 /* PrefixHeader.pch */,
+				DA5593921B2D609600B37D16 /* Info.plist */,
+				DA5593931B2D609600B37D16 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA5593AD1B2D609600B37D16 /* PTTTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA5593B01B2D609600B37D16 /* PTTTests.m */,
+				DA5593AE1B2D609600B37D16 /* Supporting Files */,
+			);
+			path = PTTTests;
+			sourceTree = "<group>";
+		};
+		DA5593AE1B2D609600B37D16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA5593AF1B2D609600B37D16 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA5593BD1B2D621F00B37D16 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				DA1E49F11B438B3F001CB356 /* DBModel */,
+				DA5593D11B2D64A800B37D16 /* UDManager.h */,
+				DA5593D21B2D64A800B37D16 /* UDManager.m */,
+				DA1E49EE1B438901001CB356 /* DBManager.h */,
+				DA1E49EF1B438901001CB356 /* DBManager.m */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		DA5593D41B2D653700B37D16 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FF8011B37DCBF00AF8234 /* ContactUtil.h */,
+				DA7FF8021B37DCBF00AF8234 /* ContactUtil.m */,
+				DA5593D51B2D653700B37D16 /* AnimationUtil.h */,
+				DA5593D61B2D653700B37D16 /* AnimationUtil.m */,
+				DA5593D71B2D653700B37D16 /* NSString+Extension.h */,
+				DA5593D81B2D653700B37D16 /* NSString+Extension.m */,
+				DA5593D91B2D653700B37D16 /* pinyin.h */,
+				DA5593DA1B2D653700B37D16 /* pinyin.m */,
+				DA5593DB1B2D653700B37D16 /* UIImage+ResizeImage.h */,
+				DA5593DC1B2D653700B37D16 /* UIImage+ResizeImage.m */,
+				DA5593DD1B2D653700B37D16 /* UINavigationController+Animation.h */,
+				DA5593DE1B2D653700B37D16 /* UINavigationController+Animation.m */,
+				DA5593DF1B2D653700B37D16 /* UITableView+Extension.h */,
+				DA5593E01B2D653700B37D16 /* UITableView+Extension.m */,
+				DA7FF7D41B33EBC300AF8234 /* EstimateUtil.h */,
+				DA7FF7D51B33EBC300AF8234 /* EstimateUtil.m */,
+				DA7FF8311B37FA8D00AF8234 /* NSDate+Extension.h */,
+				DA7FF8321B37FA8D00AF8234 /* NSDate+Extension.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DA5593F71B2D655000B37D16 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				DA5593FA1B2D655000B37D16 /* HttpInfo.h */,
+				DA5593FB1B2D655000B37D16 /* HttpInfo.m */,
+				DA5594001B2D655000B37D16 /* HttpUrl.h */,
+				DA5594011B2D655000B37D16 /* HttpUrl.m */,
+				DA5593FE1B2D655000B37D16 /* HttpRequest.h */,
+				DA5593FF1B2D655000B37D16 /* HttpRequest.m */,
+				DA5593FC1B2D655000B37D16 /* HttpManager.h */,
+				DA5593FD1B2D655000B37D16 /* HttpManager.m */,
+				DA5593F81B2D655000B37D16 /* HttpAckHandler.h */,
+				DA5593F91B2D655000B37D16 /* HttpAckHandler.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		DA5594071B2D663E00B37D16 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA85C1DF1B395700006DCE39 /* Chat */,
+				DA85C1D21B392C99006DCE39 /* Invite */,
+				DA5594081B2D663E00B37D16 /* Base */,
+				DA7FF8131B37E65400AF8234 /* NewGroup */,
+				DA7FF8041B37E63A00AF8234 /* NewContact */,
+				DA5594591B2D6C5200B37D16 /* Setting */,
+				DA55943C1B2D690100B37D16 /* Register */,
+				DA5594091B2D663E00B37D16 /* Friends */,
+				DA55940A1B2D663E00B37D16 /* Groups */,
+				DA55940B1B2D663E00B37D16 /* HomePage */,
+				DA55940C1B2D663E00B37D16 /* Login */,
+				DA55940D1B2D663E00B37D16 /* Members */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA5594081B2D663E00B37D16 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DA5594111B2D667600B37D16 /* PttNavigationController.h */,
+				DA5594121B2D667600B37D16 /* PttNavigationController.m */,
+				DA5594131B2D667600B37D16 /* PttTabBarController.h */,
+				DA5594141B2D667600B37D16 /* PttTabBarController.m */,
+				DA5594151B2D667600B37D16 /* PttViewController.h */,
+				DA5594161B2D667600B37D16 /* PttViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DA5594091B2D663E00B37D16 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				DA55944A1B2D6A4D00B37D16 /* FriendsViewController.h */,
+				DA55944B1B2D6A4D00B37D16 /* FriendsViewController.m */,
+				DA55944C1B2D6A4D00B37D16 /* FriendsViewController.xib */,
+				DA85C1DA1B394AB5006DCE39 /* FriendInfoViewController.h */,
+				DA85C1DB1B394AB5006DCE39 /* FriendInfoViewController.m */,
+				DA85C1DC1B394AB5006DCE39 /* FriendInfoViewController.xib */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		DA55940A1B2D663E00B37D16 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				DA55944F1B2D6A5C00B37D16 /* GroupsViewController.h */,
+				DA5594501B2D6A5C00B37D16 /* GroupsViewController.m */,
+				DA5594511B2D6A5C00B37D16 /* GroupsViewController.xib */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		DA55940B1B2D663E00B37D16 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				DA3C058E1B38340F009B2D79 /* ConversationCell.h */,
+				DA3C058F1B38340F009B2D79 /* ConversationCell.m */,
+				DA5594451B2D6A2A00B37D16 /* HomePageViewController.h */,
+				DA5594461B2D6A2A00B37D16 /* HomePageViewController.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		DA55940C1B2D663E00B37D16 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DA55941E1B2D688600B37D16 /* LoginViewController.h */,
+				DA55941F1B2D688600B37D16 /* LoginViewController.m */,
+				DA5594201B2D688600B37D16 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DA55940D1B2D663E00B37D16 /* Members */ = {
+			isa = PBXGroup;
+			children = (
+				DA5594741B2D75E100B37D16 /* MemberCell.h */,
+				DA5594751B2D75E100B37D16 /* MemberCell.m */,
+				DA5594761B2D75E100B37D16 /* MemberFootView.h */,
+				DA5594771B2D75E100B37D16 /* MemberFootView.m */,
+				DA5594541B2D6A6500B37D16 /* MembersViewController.h */,
+				DA5594551B2D6A6500B37D16 /* MembersViewController.m */,
+				DA5594561B2D6A6500B37D16 /* MembersViewController.xib */,
+			);
+			path = Members;
+			sourceTree = "<group>";
+		};
+		DA55941A1B2D673800B37D16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA55946E1B2D6CAA00B37D16 /* PttTopBar.h */,
+				DA55946F1B2D6CAA00B37D16 /* PttTopBar.m */,
+				DA5594421B2D69C000B37D16 /* LoadingView.h */,
+				DA5594431B2D69C000B37D16 /* LoadingView.m */,
+				DA55941B1B2D677C00B37D16 /* InfoCell.h */,
+				DA55941C1B2D677C00B37D16 /* InfoCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA5594231B2D689E00B37D16 /* PttS */ = {
+			isa = PBXGroup;
+			children = (
+				DA0AFA311B390B9B00363450 /* libPttS.a */,
+				DA5594271B2D689E00B37D16 /* PttS.h */,
+				DA5594241B2D689E00B37D16 /* AudioManager.h */,
+				DA5594251B2D689E00B37D16 /* AudioManager.m */,
+				DA5594281B2D689E00B37D16 /* PttService.h */,
+				DA5594291B2D689E00B37D16 /* PttService.m */,
+				DA55942A1B2D689E00B37D16 /* PttSNotiHandler.h */,
+				DA55942B1B2D689E00B37D16 /* PttSNotiHandler.m */,
+				DA55942C1B2D689E00B37D16 /* PttTimer.h */,
+				DA55942D1B2D689E00B37D16 /* PttTimer.m */,
+				DA55942E1B2D689E00B37D16 /* SocketConnect.h */,
+				DA9B58E41B3CEA200035DC13 /* SocketConnect.m */,
+				DA5594321B2D689E00B37D16 /* UdpPacket.h */,
+				DA5594331B2D689E00B37D16 /* UdpPacket.m */,
+			);
+			path = PttS;
+			sourceTree = "<group>";
+		};
+		DA55943C1B2D690100B37D16 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DA55943D1B2D690100B37D16 /* RegisterViewController.h */,
+				DA55943E1B2D690100B37D16 /* RegisterViewController.m */,
+				DA55943F1B2D690100B37D16 /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		DA5594591B2D6C5200B37D16 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				DA55945A1B2D6C5200B37D16 /* ChangePwdViewController.h */,
+				DA55945B1B2D6C5200B37D16 /* ChangePwdViewController.m */,
+				DA55945C1B2D6C5200B37D16 /* ChangePwdViewController.xib */,
+				DA55945D1B2D6C5200B37D16 /* RenameViewController.h */,
+				DA55945E1B2D6C5200B37D16 /* RenameViewController.m */,
+				DA55945F1B2D6C5200B37D16 /* RenameViewController.xib */,
+				DA5594601B2D6C5200B37D16 /* SettingViewController.h */,
+				DA5594611B2D6C5200B37D16 /* SettingViewController.m */,
+				DA5594621B2D6C5200B37D16 /* SettingViewController.xib */,
+				DA5594631B2D6C5200B37D16 /* UserInfoViewController.h */,
+				DA5594641B2D6C5200B37D16 /* UserInfoViewController.m */,
+				DA5594651B2D6C5200B37D16 /* UserInfoViewController.xib */,
+				DA8634891B413BCB00B3EA26 /* AppInfoViewController.h */,
+				DA86348A1B413BCB00B3EA26 /* AppInfoViewController.m */,
+				DA86348B1B413BCB00B3EA26 /* AppInfoViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		DA57E10A1B398F0D00BA9F97 /* ChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				DA57E10B1B398F0D00BA9F97 /* ChatCell.h */,
+				DA57E10C1B398F0D00BA9F97 /* ChatCell.m */,
+				DA57E11A1B399E5E00BA9F97 /* MessageModel.h */,
+				DA57E11B1B399E5E00BA9F97 /* MessageModel.m */,
+				DA57E10D1B398F0D00BA9F97 /* ChatCellFrameModel.h */,
+				DA57E10E1B398F0D00BA9F97 /* ChatCellFrameModel.m */,
+				DA57E10F1B398F0D00BA9F97 /* ChatTextView.h */,
+				DA57E1101B398F0D00BA9F97 /* ChatTextView.m */,
+				DA57E1111B398F0D00BA9F97 /* PttRecordHUD.h */,
+				DA57E1121B398F0D00BA9F97 /* PttRecordHUD.m */,
+			);
+			path = ChatCell;
+			sourceTree = "<group>";
+		};
+		DA6CAA571B3BF8FF0092C034 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CAA581B3BF8FF0092C034 /* RecordManager.h */,
+				DA6CAA591B3BF8FF0092C034 /* RecordManager.m */,
+				DA6CAA5B1B3BF9140092C034 /* UpdateManager.h */,
+				DA6CAA5C1B3BF9140092C034 /* UpdateManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DA7FF8041B37E63A00AF8234 /* NewContact */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FF8051B37E63A00AF8234 /* AddContactViewController.h */,
+				DA7FF8061B37E63A00AF8234 /* AddContactViewController.m */,
+				DA7FF8071B37E63A00AF8234 /* NewContactViewController.h */,
+				DA7FF8081B37E63A00AF8234 /* NewContactViewController.m */,
+				DA7FF8091B37E63A00AF8234 /* NewContactViewController.xib */,
+				DA7FF80A1B37E63A00AF8234 /* PhoneContactCell.h */,
+				DA7FF80B1B37E63A00AF8234 /* PhoneContactCell.m */,
+				DA7FF80C1B37E63A00AF8234 /* PhoneContactViewController.h */,
+				DA7FF80D1B37E63A00AF8234 /* PhoneContactViewController.m */,
+			);
+			path = NewContact;
+			sourceTree = "<group>";
+		};
+		DA7FF8131B37E65400AF8234 /* NewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				DA7FF8141B37E6CF00AF8234 /* CreateGroupViewController.h */,
+				DA7FF8151B37E6CF00AF8234 /* CreateGroupViewController.m */,
+				DA7FF8161B37E6CF00AF8234 /* CreateGroupViewController.xib */,
+				DA7FF8171B37E6CF00AF8234 /* MemberSelCell.h */,
+				DA7FF8181B37E6CF00AF8234 /* MemberSelCell.m */,
+				DA7FF8211B37E7DF00AF8234 /* MemberSelViewController.h */,
+				DA7FF8221B37E7DF00AF8234 /* MemberSelViewController.m */,
+			);
+			path = NewGroup;
+			sourceTree = "<group>";
+		};
+		DA85C1D21B392C99006DCE39 /* Invite */ = {
+			isa = PBXGroup;
+			children = (
+				DA85C1D51B392CEF006DCE39 /* NewInvitedViewController.h */,
+				DA85C1D61B392CEF006DCE39 /* NewInvitedViewController.m */,
+				DA85C1D71B392CEF006DCE39 /* NewInvitedViewController.xib */,
+				DA5D890C1B3B08DD00244EDF /* InviteInfoViewController.h */,
+				DA5D890D1B3B08DD00244EDF /* InviteInfoViewController.m */,
+			);
+			path = Invite;
+			sourceTree = "<group>";
+		};
+		DA85C1DF1B395700006DCE39 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				DA57E10A1B398F0D00BA9F97 /* ChatCell */,
+				DA85C1E01B39570E006DCE39 /* ChatViewController.h */,
+				DA85C1E11B39570E006DCE39 /* ChatViewController.m */,
+				DA85C1E31B3957DE006DCE39 /* PTTInputView.h */,
+				DA85C1E41B3957DE006DCE39 /* PTTInputView.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA55938D1B2D609600B37D16 /* PTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA5593B41B2D609600B37D16 /* Build configuration list for PBXNativeTarget "PTT" */;
+			buildPhases = (
+				DA55938A1B2D609600B37D16 /* Sources */,
+				DA55938B1B2D609600B37D16 /* Frameworks */,
+				DA55938C1B2D609600B37D16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PTT;
+			productName = PTT;
+			productReference = DA55938E1B2D609600B37D16 /* PTT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA5593A91B2D609600B37D16 /* PTTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA5593B71B2D609600B37D16 /* Build configuration list for PBXNativeTarget "PTTTests" */;
+			buildPhases = (
+				DA5593A61B2D609600B37D16 /* Sources */,
+				DA5593A71B2D609600B37D16 /* Frameworks */,
+				DA5593A81B2D609600B37D16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA5593AC1B2D609600B37D16 /* PBXTargetDependency */,
+			);
+			name = PTTTests;
+			productName = PTTTests;
+			productReference = DA5593AA1B2D609600B37D16 /* PTTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA5593861B2D609600B37D16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = stwx;
+				TargetAttributes = {
+					DA55938D1B2D609600B37D16 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = W6B52CMCG5;
+					};
+					DA5593A91B2D609600B37D16 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = W6B52CMCG5;
+						TestTargetID = DA55938D1B2D609600B37D16;
+					};
+				};
+			};
+			buildConfigurationList = DA5593891B2D609600B37D16 /* Build configuration list for PBXProject "PTT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA5593851B2D609600B37D16;
+			productRefGroup = DA55938F1B2D609600B37D16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA55938D1B2D609600B37D16 /* PTT */,
+				DA5593A91B2D609600B37D16 /* PTTTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA55938C1B2D609600B37D16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA85C1DE1B394AB5006DCE39 /* FriendInfoViewController.xib in Resources */,
+				DA85C1D91B392CEF006DCE39 /* NewInvitedViewController.xib in Resources */,
+				DA5594691B2D6C5200B37D16 /* RenameViewController.xib in Resources */,
+				DA7FF81D1B37E6CF00AF8234 /* CreateGroupViewController.xib in Resources */,
+				DA5594531B2D6A5C00B37D16 /* GroupsViewController.xib in Resources */,
+				DA5594221B2D688600B37D16 /* LoginViewController.xib in Resources */,
+				DA86348D1B413BCB00B3EA26 /* AppInfoViewController.xib in Resources */,
+				DA5594671B2D6C5200B37D16 /* ChangePwdViewController.xib in Resources */,
+				DA5594411B2D690100B37D16 /* RegisterViewController.xib in Resources */,
+				DA7FF8101B37E63A00AF8234 /* NewContactViewController.xib in Resources */,
+				DA5593A51B2D609600B37D16 /* LaunchScreen.xib in Resources */,
+				DA55946B1B2D6C5200B37D16 /* SettingViewController.xib in Resources */,
+				DA5594581B2D6A6500B37D16 /* MembersViewController.xib in Resources */,
+				DA55946D1B2D6C5200B37D16 /* UserInfoViewController.xib in Resources */,
+				DA55944E1B2D6A4D00B37D16 /* FriendsViewController.xib in Resources */,
+				DA5593A21B2D609600B37D16 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5593A81B2D609600B37D16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA55938A1B2D609600B37D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5594181B2D667600B37D16 /* PttTabBarController.m in Sources */,
+				DA57E1141B398F0D00BA9F97 /* ChatCellFrameModel.m in Sources */,
+				DA7FF8111B37E63A00AF8234 /* PhoneContactCell.m in Sources */,
+				DA5593E11B2D653700B37D16 /* AnimationUtil.m in Sources */,
+				DA55944D1B2D6A4D00B37D16 /* FriendsViewController.m in Sources */,
+				DA1E49F41B438B51001CB356 /* MyInfo.m in Sources */,
+				DA57E1161B398F0D00BA9F97 /* PttRecordHUD.m in Sources */,
+				DA5594341B2D689E00B37D16 /* AudioManager.m in Sources */,
+				DA5594571B2D6A6500B37D16 /* MembersViewController.m in Sources */,
+				DA1E49FD1B438B52001CB356 /* FriendInfo.m in Sources */,
+				DA55939A1B2D609600B37D16 /* PTT.xcdatamodeld in Sources */,
+				DA5593E51B2D653700B37D16 /* UINavigationController+Animation.m in Sources */,
+				DA5594211B2D688600B37D16 /* LoginViewController.m in Sources */,
+				DA1E49F01B438901001CB356 /* DBManager.m in Sources */,
+				DA57E11C1B399E5E00BA9F97 /* MessageModel.m in Sources */,
+				DA85C1D81B392CEF006DCE39 /* NewInvitedViewController.m in Sources */,
+				DA85C1DD1B394AB5006DCE39 /* FriendInfoViewController.m in Sources */,
+				DA7FF7D61B33EBC300AF8234 /* EstimateUtil.m in Sources */,
+				DA85C1E51B3957DE006DCE39 /* PTTInputView.m in Sources */,
+				DA5594051B2D655000B37D16 /* HttpRequest.m in Sources */,
+				DA5594481B2D6A2A00B37D16 /* HomePageViewController.m in Sources */,
+				DA7FF80E1B37E63A00AF8234 /* AddContactViewController.m in Sources */,
+				DA5D890E1B3B08DD00244EDF /* InviteInfoViewController.m in Sources */,
+				DA5594061B2D655000B37D16 /* HttpUrl.m in Sources */,
+				DA5594661B2D6C5200B37D16 /* ChangePwdViewController.m in Sources */,
+				DA86348C1B413BCB00B3EA26 /* AppInfoViewController.m in Sources */,
+				DA5594521B2D6A5C00B37D16 /* GroupsViewController.m in Sources */,
+				DA5594381B2D689E00B37D16 /* PttTimer.m in Sources */,
+				DA5594781B2D75E100B37D16 /* MemberCell.m in Sources */,
+				DA6CAA5A1B3BF8FF0092C034 /* RecordManager.m in Sources */,
+				DA55946C1B2D6C5200B37D16 /* UserInfoViewController.m in Sources */,
+				DA55946A1B2D6C5200B37D16 /* SettingViewController.m in Sources */,
+				DA85C1E21B39570E006DCE39 /* ChatViewController.m in Sources */,
+				DA5594021B2D655000B37D16 /* HttpAckHandler.m in Sources */,
+				DA5594371B2D689E00B37D16 /* PttSNotiHandler.m in Sources */,
+				DA7FF80F1B37E63A00AF8234 /* NewContactViewController.m in Sources */,
+				DA9B58E31B3CEA0A0035DC13 /* AppDelegate.m in Sources */,
+				DA5593E21B2D653700B37D16 /* NSString+Extension.m in Sources */,
+				DA5594031B2D655000B37D16 /* HttpInfo.m in Sources */,
+				DA1E49F71B438B51001CB356 /* Group.m in Sources */,
+				DA5594191B2D667600B37D16 /* PttViewController.m in Sources */,
+				DA55941D1B2D677C00B37D16 /* InfoCell.m in Sources */,
+				DA7FF8121B37E63A00AF8234 /* PhoneContactViewController.m in Sources */,
+				DA57E1131B398F0D00BA9F97 /* ChatCell.m in Sources */,
+				DA5593E31B2D653700B37D16 /* pinyin.m in Sources */,
+				DA55943B1B2D689E00B37D16 /* UdpPacket.m in Sources */,
+				DA3C05901B38340F009B2D79 /* ConversationCell.m in Sources */,
+				DA5594441B2D69C000B37D16 /* LoadingView.m in Sources */,
+				DA7FF8231B37E7DF00AF8234 /* MemberSelViewController.m in Sources */,
+				DA5594701B2D6CAA00B37D16 /* PttTopBar.m in Sources */,
+				DA5594401B2D690100B37D16 /* RegisterViewController.m in Sources */,
+				DA5593941B2D609600B37D16 /* main.m in Sources */,
+				DA5594041B2D655000B37D16 /* HttpManager.m in Sources */,
+				DA5594171B2D667600B37D16 /* PttNavigationController.m in Sources */,
+				DA1E4A031B438B52001CB356 /* Message.m in Sources */,
+				DA7FF81C1B37E6CF00AF8234 /* CreateGroupViewController.m in Sources */,
+				DA9B58E51B3CEA200035DC13 /* SocketConnect.m in Sources */,
+				DA5594791B2D75E100B37D16 /* MemberFootView.m in Sources */,
+				DA5594361B2D689E00B37D16 /* PttService.m in Sources */,
+				DA1E4A001B438B52001CB356 /* Letter.m in Sources */,
+				DA5594681B2D6C5200B37D16 /* RenameViewController.m in Sources */,
+				DA1E4A091B438C00001CB356 /* Conversation.m in Sources */,
+				DA7FF8031B37DCBF00AF8234 /* ContactUtil.m in Sources */,
+				DA5593D31B2D64A800B37D16 /* UDManager.m in Sources */,
+				DA1E4A061B438B52001CB356 /* UserInfo.m in Sources */,
+				DA7FF8331B37FA8D00AF8234 /* NSDate+Extension.m in Sources */,
+				DA5593E61B2D653700B37D16 /* UITableView+Extension.m in Sources */,
+				DA1E49FA1B438B52001CB356 /* Member.m in Sources */,
+				DA6CAA5D1B3BF9140092C034 /* UpdateManager.m in Sources */,
+				DA57E1151B398F0D00BA9F97 /* ChatTextView.m in Sources */,
+				DA7FF81E1B37E6CF00AF8234 /* MemberSelCell.m in Sources */,
+				DA5593E41B2D653700B37D16 /* UIImage+ResizeImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5593A61B2D609600B37D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5593B11B2D609600B37D16 /* PTTTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA5593AC1B2D609600B37D16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA55938D1B2D609600B37D16 /* PTT */;
+			targetProxy = DA5593AB1B2D609600B37D16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA5593A31B2D609600B37D16 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA5593A41B2D609600B37D16 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA5593B21B2D609600B37D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiaoping Lu (SYUU7SV929)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiaoping Lu (SYUU7SV929)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "f7f2a710-5061-4376-9c06-bb078f75b65e";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA5593B31B2D609600B37D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiaoping Lu (SYUU7SV929)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xiaoping Lu (SYUU7SV929)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "f7f2a710-5061-4376-9c06-bb078f75b65e";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA5593B51B2D609600B37D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PTT/PrefixHeader.pch";
+				INFOPLIST_FILE = PTT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PTT/PttS",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		DA5593B61B2D609600B37D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PTT/PrefixHeader.pch";
+				INFOPLIST_FILE = PTT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PTT/PttS",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		DA5593B81B2D609600B37D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PTTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PTT.app/PTT";
+			};
+			name = Debug;
+		};
+		DA5593B91B2D609600B37D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PTTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PTT.app/PTT";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA5593891B2D609600B37D16 /* Build configuration list for PBXProject "PTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA5593B21B2D609600B37D16 /* Debug */,
+				DA5593B31B2D609600B37D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA5593B41B2D609600B37D16 /* Build configuration list for PBXNativeTarget "PTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA5593B51B2D609600B37D16 /* Debug */,
+				DA5593B61B2D609600B37D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA5593B71B2D609600B37D16 /* Build configuration list for PBXNativeTarget "PTTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA5593B81B2D609600B37D16 /* Debug */,
+				DA5593B91B2D609600B37D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA5593981B2D609600B37D16 /* PTT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA5593991B2D609600B37D16 /* PTT.xcdatamodel */,
+			);
+			currentVersion = DA5593991B2D609600B37D16 /* PTT.xcdatamodel */;
+			path = PTT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA5593861B2D609600B37D16 /* Project object */;
+}
