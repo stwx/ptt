@@ -45,6 +45,7 @@
 		DA5594361B2D689E00B37D16 /* PttService.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594291B2D689E00B37D16 /* PttService.m */; };
 		DA5594371B2D689E00B37D16 /* PttSNotiHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55942B1B2D689E00B37D16 /* PttSNotiHandler.m */; };
 		DA5594381B2D689E00B37D16 /* PttTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55942D1B2D689E00B37D16 /* PttTimer.m */; };
+		DA55943A1B2D689E00B37D16 /* TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594311B2D689E00B37D16 /* TimerManager.m */; };
 		DA55943B1B2D689E00B37D16 /* UdpPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5594331B2D689E00B37D16 /* UdpPacket.m */; };
 		DA5594401B2D690100B37D16 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55943E1B2D690100B37D16 /* RegisterViewController.m */; };
 		DA5594411B2D690100B37D16 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA55943F1B2D690100B37D16 /* RegisterViewController.xib */; };
@@ -189,6 +190,8 @@
 		DA55942C1B2D689E00B37D16 /* PttTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PttTimer.h; sourceTree = "<group>"; };
 		DA55942D1B2D689E00B37D16 /* PttTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PttTimer.m; sourceTree = "<group>"; };
 		DA55942E1B2D689E00B37D16 /* SocketConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketConnect.h; sourceTree = "<group>"; };
+		DA5594301B2D689E00B37D16 /* TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager.h; sourceTree = "<group>"; };
+		DA5594311B2D689E00B37D16 /* TimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerManager.m; sourceTree = "<group>"; };
 		DA5594321B2D689E00B37D16 /* UdpPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpPacket.h; sourceTree = "<group>"; };
 		DA5594331B2D689E00B37D16 /* UdpPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UdpPacket.m; sourceTree = "<group>"; };
 		DA55943D1B2D690100B37D16 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -561,6 +564,8 @@
 				DA55942D1B2D689E00B37D16 /* PttTimer.m */,
 				DA55942E1B2D689E00B37D16 /* SocketConnect.h */,
 				DA9B58E41B3CEA200035DC13 /* SocketConnect.m */,
+				DA5594301B2D689E00B37D16 /* TimerManager.h */,
+				DA5594311B2D689E00B37D16 /* TimerManager.m */,
 				DA5594321B2D689E00B37D16 /* UdpPacket.h */,
 				DA5594331B2D689E00B37D16 /* UdpPacket.m */,
 			);
@@ -843,6 +848,7 @@
 				DA5593E31B2D653700B37D16 /* pinyin.m in Sources */,
 				DA55943B1B2D689E00B37D16 /* UdpPacket.m in Sources */,
 				DA3C05901B38340F009B2D79 /* ConversationCell.m in Sources */,
+				DA55943A1B2D689E00B37D16 /* TimerManager.m in Sources */,
 				DA5594441B2D69C000B37D16 /* LoadingView.m in Sources */,
 				DA7FF8231B37E7DF00AF8234 /* MemberSelViewController.m in Sources */,
 				DA5594701B2D6CAA00B37D16 /* PttTopBar.m in Sources */,

@@ -16,6 +16,7 @@
 
 @interface RegisterViewController ()<UITextFieldDelegate, UIAlertViewDelegate, PttServiceDelegate>{
     PttService *pttService;
+    BOOL _nameOK, _phoneOK, _pwdOK, _cPwdOK, _loginFail;
 }
 @property (strong, nonatomic) IBOutlet UIView *inputView;
 @property (strong, nonatomic) IBOutlet UITextField *phoneTextField;
@@ -32,6 +33,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *phoneNumErrorBtn;
 @property (strong, nonatomic) IBOutlet UIButton *pwdErrorBtn;
 @property (strong, nonatomic) IBOutlet UIButton *cPwdErrorBtn;
+@property (strong, nonatomic) IBOutlet UIButton *registerBtn;
 
 @end
 
@@ -60,6 +62,9 @@
     
     pttService = [PttService sharedInstance];
    
+    _registerBtn.enabled = NO;
+    _nameOK = _phoneOK = _pwdOK = _cPwdOK = NO;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -110,35 +115,34 @@
 
 - (IBAction)registerBtnClick:(UIButton *)sender {
     [self hideKeyBoard];
-    if ([_pwd.text isEqualToString:_confirmPwd.text]) {
-    
-        PTT_StartLoadingAnimation();
-        
-        [HttpManager registerWithUserId:_phoneTextField.text password:_pwd.text handler:^(NSDictionary *dataDic) {
+  
+    PTT_StartLoadingAnimation();
+    [HttpManager registerWithUserId:_phoneTextField.text password:_pwd.text handler:^(NSDictionary *dataDic) {
+        if ( PttDicResult(dataDic) != ACK_OK ) {
             PTT_StopLoadingAnimation();
-            if (PttDicResult(dataDic)) {
-                
-                NSString *alertTitle = PttDicMsg(dataDic);
-                DLog(@"%@",dataDic);
-                [HttpManager changeToNewNikename:_nameTextField.text handler:^(NSDictionary *dataDic) {
-                     DLog(@"%@",dataDic);
-                    
-                    [HttpManager loginWithUserId:_phoneTextField.text password:_pwd.text handler:^(NSDictionary *dataDic) {
-                    }];
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-                    [alert show];
-                }];
-                
-            }else{
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:PttDicMsg(dataDic)  message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:PttDicMsg(dataDic) message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alert show];
+            return ;
+        }
+        [HttpManager changeToNewNikename:_nameTextField.text handler:^(NSDictionary *dataDic) {
+            if ( PttDicResult(dataDic) != ACK_OK ) {
+                PTT_StopLoadingAnimation();
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:PttDicMsg(dataDic) message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
                 [alert show];
+                return ;
             }
+            [HttpManager loginWithUserId:_phoneTextField.text password:_pwd.text handler:^(NSDictionary *dataDic) {
+                if ( PttDicResult(dataDic) != ACK_OK ) {
+                    PTT_StopLoadingAnimation();
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:PttDicMsg(dataDic) message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                    [alert show];
+                    return ;
+                }
+            }];
         }];
-    }
-    else{
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"两次输入的密码不一致" message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [alert show];
-    }
+        
+    }];
+        
 }
 
 - (IBAction)inputFormatError:(UIButton *)sender {
@@ -166,13 +170,14 @@
     switch (textField.tag) {
         case 0:
         {
+            _nameOK = NO;
             if (textField.text.length > 10 ) {
                 _nameErrorBtn.hidden = NO;
                 _nameErrorLabel.text = @"长度不能超过10位";
             }
-            else if (textField.text == nil){
+            else if (textField.text == nil || textField.text.length == 0){
                 _nameErrorBtn.hidden = NO;
-                _nameErrorLabel.text = @"不能为空";
+                _nameErrorLabel.text = @"昵称不能为空";
             }
             else if ([EstimateUtil haveIllegalChar:str]){
                 _nameErrorBtn.hidden = NO;
@@ -180,14 +185,19 @@
             }
             else{
                 _nameErrorBtn.hidden = YES;
+                _nameErrorLabel.hidden = YES;
+                _nameOK = YES;
             }
         }
             break;
             
         case 1:
         {
+            _phoneOK = NO;
             if ([textField.text isMobileNumber]) {
                 _phoneNumErrorBtn.hidden = YES;
+                _phoneNumErrorLabel.hidden = YES;
+                _phoneOK = YES;
             }
             else{
                 _phoneNumErrorBtn.hidden = NO;
@@ -196,9 +206,16 @@
             break;
         case 2:
         {
+            _pwdOK = NO;
             int errorType = [EstimateUtil pwdErrorTypeWithPwd:textField.text];
             if (errorType == 0) {
                 _pwdErrorBtn.hidden = YES;
+                _pwdErrorLable.hidden = YES;
+                _pwdOK = YES;
+                if (![_confirmPwd.text isEqualToString:_pwd.text]) {
+                    _cPwdOK = NO;
+                    _cPwdErrorBtn.hidden = NO;
+                }
             }
             else if (errorType == 1){
                 _pwdErrorBtn.hidden = NO;
@@ -213,17 +230,19 @@
             break;
         case 3:
         {
+            _cPwdOK = NO;
             if ([_pwd.text isEqualToString:_confirmPwd.text]) {
                 _cPwdErrorBtn.hidden = YES;
+                _cPwdErrorLabel.hidden = YES;
+                _cPwdOK = YES;
             }
             else{
                 _cPwdErrorBtn.hidden = NO;
             }
         }
             break;
-        default:
-            break;
     }
+    _registerBtn.enabled = _nameOK&_phoneOK&_pwdOK&_cPwdOK;
 }
 
 - (void)addBackgroundTap{
@@ -261,9 +280,10 @@
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    DLog(@"textFieldShouldBeginEditing");
+    CGFloat constant = (HEIGHT(_inputView) - kChineseKeyboardHeight) - MaxY(textField)- 10;
     
-    CGFloat constant = kChineseKeyboardHeight- MaxY(textField) - 10;
-    if (constant <= 0 )
+    if (constant < 0 )
     {
         [UIView animateWithDuration:1 animations:^{
             _topConstraint.constant = constant;
@@ -275,8 +295,7 @@
 
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    //PTT_StartLoadingAnimation();
-    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)PttS_recvLoginResult:(NSDictionary *)dic{
@@ -286,7 +305,6 @@
             [self.navigationController popToRootViewControllerAnimated:YES];
         });
     }
-    PTT_StopLoadingAnimation();
 }
 
 @end

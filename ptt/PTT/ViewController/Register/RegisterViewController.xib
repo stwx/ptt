@@ -21,6 +21,7 @@
                 <outlet property="pwd" destination="Wsc-4Z-3RV" id="3hZ-4l-pEt"/>
                 <outlet property="pwdErrorBtn" destination="X0f-ax-AhW" id="chc-3a-Qs3"/>
                 <outlet property="pwdErrorLable" destination="irP-iW-DVS" id="sY2-2d-T9z"/>
+                <outlet property="registerBtn" destination="7kM-44-Bip" id="UC5-rV-IrO"/>
                 <outlet property="topConstraint" destination="vVW-bL-Ntj" id="Lgd-fX-oNU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

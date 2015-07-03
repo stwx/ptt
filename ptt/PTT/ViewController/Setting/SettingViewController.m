@@ -122,9 +122,7 @@
 
 #pragma mark - actiongSheet delegate
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
-    DLog(@"clickedButtonAtIndex");
     if (buttonIndex == 0) {
-        DLog(@"clickedButtonAtIndex");
         PTT_StartLoadingAnimation();
         [[PttService sharedInstance] PTT_Logout];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"logout" object:self];
